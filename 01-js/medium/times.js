@@ -9,5 +9,12 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
+    const starTimerInSec = new Date().getSeconds();
+    let val = n*(n+1)/2;
+    // for (let index = 1; index <=n; index++) {
+    //     val += 1; 
+    // }
+    const stopTimerInSec = new Date().getSeconds();
+    console.log('Time taken: ', val,  ' -- ', stopTimerInSec-starTimerInSec);
     return 0.01;
 }
