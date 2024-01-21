@@ -1,22 +1,6 @@
-import { useState } from "react";
 import "./App.css";
-import { useEffect } from "react";
-import axios from "axios";
 
 function App() {
-  const [userData, setUserData] = useState({
-    title: "",
-    name: "",
-  });
-  const fetchRandomUser = async () => {
-    const { results } = (await axios.get("https://randomuser.me/api/")).data;
-
-    console.log(results[0]);
-  };
-
-  useEffect(() => {
-    // fetchRandomUser();
-  }, []);
   return (
     <>
       <div className="flex justify-center">
